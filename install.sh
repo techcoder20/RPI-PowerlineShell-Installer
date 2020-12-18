@@ -1,19 +1,19 @@
 #!/bin/bash
 
+function error {
+  echo -e "\\e[91m$1\\e[39m"
+  exit 1
+}
+
 #Installing dependencies
-sudo apt install python3 python-pip fonts-powerline fonts-fantasque-sans 
+sudo apt install python3 python-pip fonts-powerline fonts-fantasque-sans  || error "Failed to install dependencies"
 
 #Installing powerline shell with pip3
-pip3 install powerline-shell
-
-#Creating back directory
-mkdir ~/RPI-PowerlineShell-Installer/.backup
-
-#Creating backup of lxterminal configs
-sudo cp -r ~/.config/lxterminal ~/RPI-PowerlineShell-Installer/.backup
+sudo pip3 install powerline-shell || error "Failed to install powerline shell with pip3"
 
 #Copying powerline shell configs
-sudo cp -r ~/RPI-PowerlineShell-Installer/lxterminal ~/.config
+sed -i '/fontname/c\fontname=Fantasque Sans Mono Bold 11' ~/.config/lxterminal/lxterminal.conf
+sed -i '/FontName/c\FontName=Fantasque Sans Mono 12' ~/.config/xfce4/terminal/terminalrc
 
 #Removing powerline in ~/.bashrc if already there
 sed -i '/function _update_ps1() {/,/fi/{d}' ~/.bashrc
@@ -26,3 +26,14 @@ echo '''function _update_ps1() {
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi ''' >> ~/.bashrc
+
+#Clearing terminal
+clear
+
+#Changing directory to home directory
+cd ~/
+
+#Restarting bash
+exec bash 
+
+
