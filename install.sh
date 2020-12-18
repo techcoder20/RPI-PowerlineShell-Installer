@@ -27,13 +27,6 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi ''' >> ~/.bashrc
 
-#Clearing terminal
-clear
 
-#Changing directory to home directory
-cd ~/
-
-#Restarting bash
-exec bash 
 
 
