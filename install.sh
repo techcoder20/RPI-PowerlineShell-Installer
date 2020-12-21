@@ -11,8 +11,9 @@ sudo apt install python3 python-pip fonts-powerline fonts-fantasque-sans  || err
 #Installing powerline shell with pip3
 sudo pip3 install powerline-shell || error "Failed to install powerline shell with pip3"
 
-#Copying powerline shell configs
+echo fontname >> ~/.config/lxterminal/lxterminal.conf
 sed -i '/fontname/c\fontname=Fantasque Sans Mono Bold 11' ~/.config/lxterminal/lxterminal.conf
+echo FontName >> ~/.config/xfce4/terminal/terminalrc
 sed -i '/FontName/c\FontName=Fantasque Sans Mono 12' ~/.config/xfce4/terminal/terminalrc
 
 #Removing powerline in ~/.bashrc if already there
