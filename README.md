@@ -9,10 +9,8 @@ Powerline Shell is a beautiful and useful prompt generator for Bash, ZSH, Fish, 
 - It's easy to customize and extend. See below for   
 - The generated prompts are designed to resemble powerline, but otherwise this project has no relation to powerline. 
 
-This Github Repository contains the install and uninstall script for installing and uninstalling powerline shell from the raspberry pi.
 **Note: This will only work with lxterminal and xfce4-terminal. If you want this script to work for other terminals please open a issue.**    
-
-
+  
 ## Installation
 Run this command to install powerline shell on the Raspberry Pi  
 `git clone https://github.com/techcoder20/RPI-PowerlineShell-Installer.git ~/RPI-PowerlineShell-Installer && cd ~/RPI-PowerlineShell-Installer && sudo chmod +x install.sh && ./install.sh`  
