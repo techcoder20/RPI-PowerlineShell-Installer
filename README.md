@@ -21,7 +21,7 @@ Run this command to install powerline shell on the Raspberry Pi
 [![badge](https://github.com/Botspot/pi-apps/blob/master/icons/badge.png?raw=true)](https://github.com/Botspot/pi-apps)  
 
 
-## Uninstallation  
+## Uninstall
 `cd ~/RPI-PowerlineShell-Installer && sudo chmod +x uninstall.sh && ./uninstall.sh`  
 
  
