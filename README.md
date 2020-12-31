@@ -25,3 +25,5 @@ Run this command to install powerline shell on the Raspberry Pi
 `cd ~/RPI-PowerlineShell-Installer && sudo chmod +x uninstall.sh && ./uninstall.sh`  
 
  
+## Join My Discord Server  
+[![Join our Discord server!](https://invidget.switchblade.xyz/WKdBuBKhgm)](https://discord.gg/WKdBuBKhgm)
