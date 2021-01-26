@@ -13,8 +13,11 @@ Powerline Shell is a beautiful and useful prompt generator for Bash, ZSH, Fish, 
   
 ## Installation
 Run this command to install powerline shell on the Raspberry Pi  
-`git clone https://github.com/techcoder20/RPI-PowerlineShell-Installer.git ~/RPI-PowerlineShell-Installer && cd ~/RPI-PowerlineShell-Installer && sudo chmod +x install.sh && ./install.sh`  
-
+```
+git clone https://github.com/techcoder20/RPI-PowerlineShell-Installer.git ~/RPI-PowerlineShell-Installer
+sudo chmod +x ~/RPI-PowerlineShell-Installer/install.sh
+~/RPI-PowerlineShell-Installer./install.sh
+```
 **OR**  
 
  
