@@ -6,7 +6,7 @@ function error {
 }
 
 #Installing dependencies
-sudo apt install python3 python-pip fonts-powerline fonts-fantasque-sans  || error "Failed to install dependencies"
+sudo apt install python3 python-pip python3-pip fonts-powerline fonts-fantasque-sans  || error "Failed to install dependencies"
 
 #Installing powerline shell with pip3
 sudo pip3 install powerline-shell || error "Failed to install powerline shell with pip3"
